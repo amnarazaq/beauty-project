@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layouts.app')
 @section('content')
-   i am the home page
+   <img src="{{ asset('images/banner.jpg')}}" class="img-fluid" alt="Responsive image">
 @stop
