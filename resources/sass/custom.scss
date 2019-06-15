@@ -1,0 +1,19 @@
+#banner {
+	background-size: cover;
+    height: 100vh;
+    min-height: 400px;
+    background-image: url("/images/banner.jpg");
+}
+#navbarSupportedContent {
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				color: $pink;
+			}
+			&.active, &:hover {
+				color: $deeppink;
+				font-weight: bold;
+			}
+		}
+	}
+}

@@ -1,5 +1,5 @@
-<section>
-	<nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top container fixed-top">
+<section id="banner">
+	<nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top fixed-top px-5">
 	  <a class="navbar-brand" href="{{ url('/')}}">{{ config('app.name')}}</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
