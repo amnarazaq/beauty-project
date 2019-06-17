@@ -4,7 +4,7 @@
      @include('includes.head')
   </head>
 
-  <body>
+  <body id="app">
     <header>
       @include('includes.header')
     </header>
@@ -16,5 +16,7 @@
     <footer>
       @include('includes.footer')
     </footer>
+
+    @yield('modals')
   </body>
 </html>

@@ -1,4 +1,4 @@
-<section id="banner">
+<section>
 	<nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top fixed-top px-5">
 	  <a class="navbar-brand" href="{{ url('/')}}">{{ config('app.name')}}</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,13 +8,13 @@
 	  <div class="collapse navbar-collapse d-flex-lg justify-content-lg-around" id="navbarSupportedContent">
 	    <ul class="navbar-nav m-lg-auto">
 	      <li class="nav-item active px-3">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#app">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item px-3">
-	        <a class="nav-link" href="#">About</a>
+	        <a class="nav-link" href="#about-us">About</a>
 	      </li>
 	      <li class="nav-item px-3">
-	        <a class="nav-link" href="#">How it Works</a>
+	        <a class="nav-link" href="#how-it-works">How it Works</a>
 	      </li>
 	      <li class="nav-item px-3">
 	        <a class="nav-link" href="#">Contact Us</a>
@@ -23,13 +23,10 @@
 	    <ul class="navbar-nav">
 	    	@guest
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#login-modal">
+                      {{ __('Login') }}
+                    </button>
                 </li>
-                @if (Route::has('register'))
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                    </li>
-                @endif
             @else
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -53,4 +50,5 @@
 	  </div>
 	</nav>
 
+    @yield('main-banner')
 </section>
