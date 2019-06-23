@@ -5,11 +5,11 @@
   </head>
 
   <body id="app">
-    <header>
-      @include('includes.header')
-    </header>
-
     <section>
+      @include('includes.header')
+    </section>
+
+    <section class="content">
       @yield('content')
     </section>
 
