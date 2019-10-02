@@ -1,8 +1,12 @@
 /node_modules
 /public/hot
 /public/storage
+/public/css/*.css
+/public/js/*.js
+/public/mix-menifest.json
 /storage/*.key
 /vendor
+package-lock.json
 .env
 .phpunit.result.cache
 Homestead.json
