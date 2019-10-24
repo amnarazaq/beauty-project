@@ -5,7 +5,7 @@
     	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active ">
-              <div class="title d-flex justify-content-center" style="font-family:  Arial Black"><h1>Welcome</h1></div>
+              <div class="title d-flex justify-content-center  col-sm-10" style="font-family:  Arial Black"><h1>Welcome</h1></div>
               <div class="description" style="font-family:  Georgia;"><h2>To a Glamorous Beauty website</h2></div>
             </div>
             <div class="carousel-item">
