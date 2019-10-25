@@ -1,0 +1,76 @@
+#banner {
+	background-size: cover;
+    background-image: url("/images/banner22.jpg");
+    height: 100vh;
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-fluid {
+  max-width: 100%;
+  height: 70px;
+}
+#navbarSupportedContent {
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				color: $pink;
+                font-size: 18px;
+			}
+			&.active, &:hover {
+				color: $deeppink;
+				font-weight: bold;
+			}
+            .btn:hover {
+                background-color: $pink;
+                color: $white;
+                border-color: $pink;
+            }
+		}
+	}
+}
+
+.border-bottom-pink {
+    @extend .shadow;
+    border-bottom: 1px solid $lightpink;
+}
+
+/******* About Us *******/
+#about-us {
+  background-image: url("/images/about_us_background.jpg");
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about-us::before{
+  background-color: rgba(255, 255, 255, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/******* How It Works *******/
+#how-it-works {
+  background-image: url("/images/how-work.jpg");
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#how-it-works::before{
+  background-color: rgba(255, 255, 255, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.content {
+    min-height: 100vh;
+    padding-top:$nav-height;
+}
