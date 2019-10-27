@@ -11,8 +11,16 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
     return view('pages.home');
+});
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function() {
+    Route::get('/', function () {
+        return view('admin.index');
+    });
 });
 
 Auth::routes();
