@@ -22,6 +22,12 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
 
     Route::group(['prefix' => 'brands'], function() {
        Route::get('/', 'Admin\BrandController@index')->name('brands');
+       Route::get('/create', 'Admin\BrandController@create')->name('brands.create');
+       Route::post('/create', 'Admin\BrandController@store')->name('brands.store');
+       Route::get('/{brand}/edit', 'Admin\BrandController@edit')->name('brands.edit');
+       Route::patch('/{brand}/edit', 'Admin\BrandController@update')->name('brands.update');
+       Route::delete('/{brand}/delete', 'Admin\BrandController@delete')->name('brands.delete');
+       
     });
 
     Route::group(['prefix' => 'settings'], function() {
