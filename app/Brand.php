@@ -19,4 +19,9 @@ class Brand extends Model
     {
         return self::IMAGE_FOLDER . $value;
     }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }

@@ -31,15 +31,26 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
     });
 
     Route::group(['prefix' => 'settings'], function() {
-        Route::get('/', 'Admin\SettingController@index')->name('settings');
+         Route::get('/', 'Admin\SettingController@index')->name('settings');
      });
 
      Route::group(['prefix' => 'categories'], function() {
         Route::get('/', 'Admin\CategoryController@index')->name('categories');
+        Route::get('/create', 'Admin\CategoryController@create')->name('categories.create');
+        Route::post('/create', 'Admin\CategoryController@store')->name('categories.store');
+        Route::get('/{category}/edit', 'Admin\CategoryController@edit')->name('categories.edit');
+        Route::patch('/{category}/edit', 'Admin\CategoryController@update')->name('categories.update');
+        Route::delete('/{category}/delete', 'Admin\CategoryController@delete')->name('categories.delete');
+        
      });
 
      Route::group(['prefix' => 'products'], function() {
         Route::get('/', 'Admin\ProductController@index')->name('products');
+        Route::get('/create', 'Admin\ProductController@create')->name('products.create');
+        Route::post('/create', 'Admin\ProductController@store')->name('products.store');
+        Route::get('/{category}/edit', 'Admin\ProductController@edit')->name('products.edit');
+        Route::patch('/{category}/edit', 'Admin\ProductController@update')->name('products.update');
+        Route::delete('/{category}/delete', 'Admin\ProductController@delete')->name('products.delete');
      });
 
      Route::group(['prefix' => 'users'], function() {
