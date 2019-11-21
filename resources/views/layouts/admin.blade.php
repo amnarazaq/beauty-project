@@ -17,7 +17,6 @@
                 </div>
             </div>
         </main>
-        @include('includes.admin.rightsidebar')
     </div>
 
     @include('includes.admin.footer')

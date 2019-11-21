@@ -99,6 +99,6 @@ class CategoryColorTypeTableSeeder extends Seeder
             
         ];
 
-        DB::table('category_color_type')->insert($colorTypes);
+        DB::table('category_color_types')->insert($colorTypes);
     }
 }

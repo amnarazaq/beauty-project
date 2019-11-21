@@ -32,10 +32,10 @@
                     </td>
                     <td class="align-middle">
                     <a href="{{ route('products.edit', [$product->id]) }}" class="mr-2" title="edit">
-                            <i class="fa fa-pencil fa-2x text-warning" aria-hidden="true"></i>
+                            <i class="far fa-edit text-primary" aria-hidden="true"></i>
                         </a>
                         <a href="{{ route('products.delete', [$product->id]) }}" title="delete">
-                            <i class="fa fa-trash fa-2x text-danger" aria-hidden="true"></i>
+                            <i class="fa fa-trash text-danger" aria-hidden="true"></i>
                         </a>
                     </td>
                 </tr>

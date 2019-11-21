@@ -13,7 +13,7 @@ class CreateCategoryColorType extends Migration
      */
     public function up()
     {
-        Schema::create('category_color_type', function (Blueprint $table) {
+        Schema::create('category_color_types', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name', 50);
            
@@ -29,6 +29,6 @@ class CreateCategoryColorType extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category_color_type');
+        Schema::dropIfExists('category_color_types');
     }
 }

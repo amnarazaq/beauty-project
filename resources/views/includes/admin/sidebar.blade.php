@@ -3,7 +3,7 @@
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin') }}">
-                <i class="nav-icon fa fa-tachometer" aria-hidden="true"></i> Dashboard
+                <i class="nav-icon fas fa-tachometer-alt" aria-hidden="true"></i> Dashboard
                 </a>
             </li>
             <li class="nav-item">
@@ -15,8 +15,12 @@
                 <i class="nav-icon fa fa-th" aria-hidden="true"></i> Categories</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('colortype') }}">
+                <i class="nav-icon fas fa-palette" aria-hidden="true"></i> Category Color Type</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('products') }}">
-                <i class="nav-icon fa fa-product-hunt" aria-hidden="true"></i> Products</a>
+                <i class="nav-icon fab fa-product-hunt" aria-hidden="true"></i> Products</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('settings') }}">
