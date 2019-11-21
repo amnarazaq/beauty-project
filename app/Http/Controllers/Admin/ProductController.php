@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Brand;
 use App\Category;
+use App\CategoryColorType;
 use App\Http\Controllers\Controller;
 use App\Product;
 use Illuminate\Http\Request;
@@ -30,6 +31,9 @@ class ProductController extends Controller
     {
         $categories = Category::orderBy('name')->get();
         $brands = Brand::orderBy('name')->get();
+        $colorTypes = CategoryColorType::orderBy('name')->get();
+
+        return view('admin.product.createEditForm', compact('categories', 'brands', 'colorTypes'));
     }
 
     /**

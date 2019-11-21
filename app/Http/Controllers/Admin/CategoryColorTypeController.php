@@ -16,8 +16,8 @@ class CategoryColorTypeController extends Controller
      */
     public function index()
     {
-        $categorycolortype = CategoryColorType::paginate(10);
-        return view('admin.category_color_type.index', compact('categorycolortype'));
+        $categoryColorTypes = CategoryColorType::paginate(10);
+        return view('admin.category_color_type.index', compact('categoryColorTypes'));
     }
 
     /**
@@ -42,16 +42,16 @@ class CategoryColorTypeController extends Controller
         $colortype->name = $request->name;
         $colortype->save();
 
-        return redirect()->route('colortype')->with('success',  'New Category color type Successfully Created.');
+        return redirect()->route('colortypes')->with('success',  'New Category color type Successfully Created.');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\CategoryColorType  $colortype
+     * @param  \App\CategoryColorType  $categorycolortype
      * @return \Illuminate\Http\Response
      */
-    public function show(CategoryColorType $colortype)
+    public function show(CategoryColorType $categorycolortype)
     {
         //
     }
@@ -59,38 +59,38 @@ class CategoryColorTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\CategoryColorType  $colortype
+     * @param  \App\CategoryColorType  $categorycolortype
      * @return \Illuminate\Http\Response
      */
-    public function edit(CategoryColorType $colortype)
+    public function edit(CategoryColorType $categorycolortype)
     {
-        return view('admin.category.createEditForm', compact('colortype'));
+        return view('admin.category_color_type.createEditForm', compact('categorycolortype'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\CategoryColorTypeForm  $request
-     * @param  \App\CategoryColorType  $colortype
+     * @param  \App\CategoryColorType  $categorycolortype
      * @return \Illuminate\Http\Response
      */
-    public function update(CategoryColorTypeForm $request, CategoryColorType $colortype)
+    public function update(CategoryColorTypeForm $request, CategoryColorType $categorycolortype)
     {
-        $colortype->name = $request->name;
-        $colortype->save();
+        $categorycolortype->name = $request->name;
+        $categorycolortype->save();
 
-        return redirect()->route('colortype')->with('success',  'Category color type Successfully updated.');
+        return redirect()->route('colortypes')->with('success',  'Category color type Successfully updated.');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\CategoryColorType  $colortype
+     * @param  \App\CategoryColorType  $colortycategorycolortypepe
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CategoryColorType $colortype)
+    public function destroy(CategoryColorType $categorycolortype)
     {
-        $colortype->delete();
+        $categorycolortype->delete();
         return redirect()->back();
     }
 }

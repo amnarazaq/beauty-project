@@ -15,7 +15,7 @@
                 <i class="nav-icon fa fa-th" aria-hidden="true"></i> Categories</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('colortype') }}">
+                <a class="nav-link" href="{{ route('colortypes') }}">
                 <i class="nav-icon fas fa-palette" aria-hidden="true"></i> Category Color Type</a>
             </li>
             <li class="nav-item">

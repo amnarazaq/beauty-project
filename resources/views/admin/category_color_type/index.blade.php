@@ -2,7 +2,7 @@
 @section('content')
 <div class="mt-5">
 <div class="text-right">
-        <a href="{{ route('colortype.create') }}" class="btn btn-primary">+ Add Category Color Type</a>
+        <a href="{{ route('colortypes.create') }}" class="btn btn-primary">+ Add Category Color Type</a>
     </div>
     <table class="table table-striped table-hover table-responsive-sm">
         <thead class="thead-dark">
@@ -13,15 +13,15 @@
             </tr> 
         </thead>
         <tbody>
-            @forelse ($categorycolortype as $index => $colortype)
+            @forelse ($categoryColorTypes as $index => $colortype)
                 <tr>
-                    <th scope="row" class="align-middle">{{ (($categorycolortype->currentPage() - 1)  * 10) + ($index + 1) }}</th>
+                    <th scope="row" class="align-middle">{{ (($categoryColorTypes->currentPage() - 1)  * 10) + ($index + 1) }}</th>
                     <td class="align-middle">{{ $colortype->name }}</td>
                     <td class="align-middle">
-                        <a href="{{ route('colortype.edit', [$colortype->id]) }}" class="mr-2" title="edit">
+                        <a href="{{ route('colortypes.edit', [$colortype->id]) }}" class="mr-2" title="edit">
                             <i class="far fa-edit text-primary" aria-hidden="true"></i>
                         </a>
-                        <a href="{{ route('colortype.delete', [$colortype->id]) }}" title="delete">
+                        <a href="{{ route('colortypes.delete', [$colortype->id]) }}" title="delete">
                             <i class="fa fa-trash text-danger" aria-hidden="true"></i>
                         </a>
                     </td>
@@ -33,6 +33,6 @@
             @endforelse
         </tbody>
     </table>
-    {{ $categorycolortype->links() }}
+    {{ $categoryColorTypes->links() }}
 </div>
 @stop

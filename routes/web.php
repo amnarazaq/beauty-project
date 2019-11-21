@@ -34,13 +34,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
          Route::get('/', 'Admin\SettingController@index')->name('settings');
      });
 
-     Route::group(['prefix' => 'category_color_type'], function() {
-        Route::get('/', 'Admin\CategoryColorTypeController@index')->name('colortype');
-        Route::get('/create', 'Admin\CategoryColorTypeController@create')->name('colortype.create');
-        Route::post('/create', 'Admin\CategoryColorTypeController@store')->name('colortype.store');
-        Route::get('/{}/edit', 'Admin\CategoryColorTypeController@edit')->name('colortype.edit');
-        Route::patch('/{}/edit', 'Admin\CategoryColorTypeController@update')->name('colortype.update');
-        Route::delete('/{}/delete', 'Admin\CategoryColorTypeController@delete')->name('colortype.delete');
+     Route::group(['prefix' => 'color-types'], function() {
+        Route::get('/', 'Admin\CategoryColorTypeController@index')->name('colortypes');
+        Route::get('/create', 'Admin\CategoryColorTypeController@create')->name('colortypes.create');
+        Route::post('/create', 'Admin\CategoryColorTypeController@store')->name('colortypes.store');
+        Route::get('/{categorycolortype}/edit', 'Admin\CategoryColorTypeController@edit')->name('colortypes.edit');
+        Route::patch('/{categorycolortype}/edit', 'Admin\CategoryColorTypeController@update')->name('colortypes.update');
+        Route::delete('/{categorycolortype}/delete', 'Admin\CategoryColorTypeController@delete')->name('colortypes.delete');
         
      });
 
