@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class BrandForm extends FormRequest
@@ -24,8 +25,15 @@ class BrandForm extends FormRequest
      */
     public function rules()
     {
+        if (Request::isMethod('patch')) {
+            $logo = 'nullable|max:2048';
+        } else {
+            $logo = 'required|max:2048';
+        }
+
         return [
-            'name' => 'required|unique:brands|max:50'
+            'name' => 'required|max:50|regex:/^[\pL\s\-]+$/u|unique:brands,name,' . $this->brand->id,
+            'logo' => $logo,
         ];
     }
 
@@ -37,9 +45,10 @@ class BrandForm extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => 'A name is required',
-            'name.unique'  => 'Name already exists. Use different name.',
-            'name.max' => 'Max character limit is 50'
+            'name.required' => 'A Brand name is required',
+            'name.unique'  => 'Brand name already exists. Use different name.',
+            'name.max' => 'Max character limit is 50',
+            'logo.required' => 'Brand logo is required',
         ];
     }
 }

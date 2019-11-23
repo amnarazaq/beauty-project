@@ -1,7 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Brand;
+use App\Category;
+use App\CategoryColorType;
+use App\Http\Controllers\Controller;
 use App\Product;
 use Illuminate\Http\Request;
 
@@ -14,7 +18,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::orderBy('name')->paginate(10);
+        return view('admin.product.index', compact('products'));
     }
 
     /**
@@ -24,7 +29,11 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::orderBy('name')->get();
+        $brands = Brand::orderBy('name')->get();
+        $colorTypes = CategoryColorType::orderBy('name')->get();
+
+        return view('admin.product.createEditForm', compact('categories', 'brands', 'colorTypes'));
     }
 
     /**

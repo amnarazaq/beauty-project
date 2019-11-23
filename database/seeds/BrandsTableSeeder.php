@@ -31,7 +31,7 @@ class BrandsTableSeeder extends Seeder
             ],
             [
                 'name' => 'NARS',
-                'logo' => 'nars.png'
+                'logo' => 'nars.jpg'
             ],
             [
                 'name' => 'Laura Mercier',
@@ -51,7 +51,7 @@ class BrandsTableSeeder extends Seeder
             ],
             [
                 'name' => 'Urban Decay',
-                'logo' => 'urban-decay.png'
+                'logo' => 'urban-decay.jpg'
             ],
             [
                 'name' => 'Sephora',
@@ -67,7 +67,7 @@ class BrandsTableSeeder extends Seeder
             ],
             [
                 'name' => 'Covergirl',
-                'logo' => 'covergirl.png'
+                'logo' => 'covergirl.jpg'
             ],
             [
                 'name' => 'Clinique',
@@ -103,19 +103,19 @@ class BrandsTableSeeder extends Seeder
             ],
             [
                 'name' => 'Too Faced',
-                'logo' => 'too-faced.png'
+                'logo' => 'too-faced.jpg'
             ],
             [
                 'name' => 'Benefit',
-                'logo' => 'benefit.png'
+                'logo' => 'benefit.jpg'
             ],
             [
                 'name' => 'Anastasia',
-                'logo' => 'anastasia.png'
+                'logo' => 'anastasia.jpg'
             ],
             [
                 'name' => 'Smashbox',
-                'logo' => 'smashbox.png'
+                'logo' => 'smashbox.jpg'
             ],
             [
                 'name' => 'IT Cosmetics',
@@ -123,7 +123,7 @@ class BrandsTableSeeder extends Seeder
             ],
             [
                 'name' => 'The Balm',
-                'logo' => 'the-balm.png'
+                'logo' => 'the-balm.jpg'
             ],
             [
                 'name' => 'Tom Ford',
@@ -131,15 +131,15 @@ class BrandsTableSeeder extends Seeder
             ],
             [
                 'name' => 'Kylie',
-                'logo' => 'kylie.png'
+                'logo' => 'kylie.jpg'
             ],
             [
                 'name' => 'Neutrogena',
-                'logo' => 'neutrogena.png'
+                'logo' => 'Neutrogena.png'
             ],
             [
                 'name' => 'Etude',
-                'logo' => 'etude.png'
+                'logo' => 'Etude.png'
             ],
             [
                 'name' => 'Avon',
