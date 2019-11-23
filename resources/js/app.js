@@ -6,6 +6,8 @@
 
 require('./bootstrap');
 
+window.Webcam = require('webcamjs');
+
 //window.Vue = require('vue');
 
 /**
