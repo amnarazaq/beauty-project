@@ -24,6 +24,7 @@ class Product extends Model
     {
         return $this->belongsTo(Brand::class);
     }
+    
     public function color_type()
     {
         return $this->belongsTo(CategoryColorType::class);
