@@ -39,7 +39,8 @@ class CategoriesTableSeeder extends Seeder
             ['name' => 'Lip Gloss'],
             ['name' => 'Lip Liner'],
             ['name' => 'Lip Balm'],
-            ['name' => 'Lip Primer']
+            ['name' => 'Lip Primer'],
+            ['name'=>'kajal']
         ];
 
         DB::table('categories')->insert($categories);

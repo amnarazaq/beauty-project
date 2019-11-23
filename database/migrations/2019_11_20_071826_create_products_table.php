@@ -21,10 +21,12 @@ class CreateProductsTable extends Migration
             $table->string('color_code_hex', 6);
             $table->string('color_name', 30);
             $table->string('image', 50);
+            $table->unsignedBigInteger('category_color_type_id')->nullable();
             $table->timestamps();
 
-            $table->foreign('category_id')->references('id')->on('categories');
-            $table->foreign('brand_id')->references('id')->on('brands');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
+            $table->foreign('category_color_type_id')->references('id')->on('category_color_types')->onDelete('set null');
         });
     }
 

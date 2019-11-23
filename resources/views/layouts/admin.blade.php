@@ -12,11 +12,11 @@
         <main class="main">
             <div class="container-fluid">
                 <div class="animated fadeIn">
+                    @include('flash-message')
                     @yield('content')
                 </div>
             </div>
         </main>
-        @include('includes.admin.rightsidebar')
     </div>
 
     @include('includes.admin.footer')
