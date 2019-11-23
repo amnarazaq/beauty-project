@@ -6,3 +6,4 @@
 <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
 <!-- Icons-->
 <link rel="stylesheet" type="text/css" href="{{ mix('/css/coreui-icons.css') }}">
+@yield('custom-css')

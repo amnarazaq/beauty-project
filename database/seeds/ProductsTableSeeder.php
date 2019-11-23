@@ -616,7 +616,7 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => '28',
                 'brand_id' => '17',
                 'color_code_hex' => '000000',
-                'color_name' => '23',
+                'color_name' => 'black',
                 'image' => 'black.jpg',
                 'category_color_type_id' => '23',
                 'created_at' => date("Y-m-d H:i:s"),

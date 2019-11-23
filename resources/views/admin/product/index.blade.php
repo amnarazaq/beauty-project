@@ -21,7 +21,7 @@
                 <tr>
                     <th scope="row" class="align-middle">{{ (($products->currentPage() - 1)  * 10) + ($index + 1) }}</th>
                     <td class="align-middle">
-                        <img class="img-fluid" width="64px" height="64px" src="{{ asset('/images/products/'.$product->category->id.'/'.$product->brand->id.'/'.$product->image) }}">
+                        <img class="img-fluid" width="64px" height="64px" style="background-color:white" src="{{ asset('/images/products/'.$product->category->id.'/'.$product->brand->id.'/'.$product->image) }}">
                     </td>
                     <td class="align-middle">{{ $product->category->name }}</td>
                     <td class="align-middle">{{ $product->brand->name }}</td>
