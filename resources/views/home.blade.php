@@ -18,10 +18,50 @@
 	    			<img class="" alt="Get the look"src="{{asset('/images/look.PNG')}}">
 				</div>
 			</div>
+			<div class="row d-flex">
+				<div class="col-md-7" style="background-color:yellow;">First Column</div>
+				<div class="col-md-5" style="background-color:green;">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-12" id="my-camera"></div>
+							</div>
+							<div class="row justify-content-sm-center">
+								<div class="col-sm-5"> <a href="javascript:void(take_snapshot())" class="btn btn-primary">Take Snapshot</a></div>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-sm-12" id="my_result"></div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
 		</div>
+		<script language="Javascript">
+			
+			Webcam.set({
+				width: 320,
+				height: 240,
+				dest_width: 640,
+				dest_height: 480,
+				image_format: 'jpeg',
+				jpeg_quality: 90,
+				force_flash: false,
+				flip_horiz: true,
+				fps: 45
+			});
 		
-</section>
-<section id="new-body">
+			Webcam.attach('#my-camera');
+
+			function take_snapshot() {
+				Webcam.snap( function(data_uri) {
+					document.getElementById('my_result').innerHTML = '<img class="img-fluid" src="'+data_uri+'"/>';
+				});
+			}
+		</script>
 </section>
 
 @stop
