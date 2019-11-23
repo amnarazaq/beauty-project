@@ -58,9 +58,9 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
         Route::get('/', 'Admin\ProductController@index')->name('products');
         Route::get('/create', 'Admin\ProductController@create')->name('products.create');
         Route::post('/create', 'Admin\ProductController@store')->name('products.store');
-        Route::get('/{category}/edit', 'Admin\ProductController@edit')->name('products.edit');
-        Route::patch('/{category}/edit', 'Admin\ProductController@update')->name('products.update');
-        Route::delete('/{category}/delete', 'Admin\ProductController@delete')->name('products.delete');
+        Route::get('/{product}/edit', 'Admin\ProductController@edit')->name('products.edit');
+        Route::patch('/{product}/edit', 'Admin\ProductController@update')->name('products.update');
+        Route::delete('/{product}/delete', 'Admin\ProductController@delete')->name('products.delete');
      });
 
      Route::group(['prefix' => 'users'], function() {
