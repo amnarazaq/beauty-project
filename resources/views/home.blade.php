@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<section id="new-header" style="margin-top: 100px">
+<section id="new-header">
     @if (session('status'))
         <div class="alert alert-success" role="alert">
             {{ session('status') }}
@@ -20,11 +20,11 @@
 			</div>
 			<div class="row d-flex">
 				<div class="col-md-7" style="background-color:yellow;">First Column</div>
-				<div class="col-md-5" style="background-color:green;">
+				<div class="col-md-5" style="background-color:green;" >
 					<div class="row">
 						<div class="col-md-8">
 							<div class="row">
-								<div class="col-md-12" id="my-camera"></div>
+								<div class="col-md-12" id="my-camera" ></div>
 							</div>
 							<div class="row justify-content-sm-center">
 								<div class="col-sm-5"> <a href="javascript:void(take_snapshot())" class="btn btn-primary">Take Snapshot</a></div>
@@ -33,7 +33,7 @@
 						
 						<div class="col-md-4">
 							<div class="row">
-								<div class="col-sm-12" id="my_result"></div>
+								<div class="col-sm-12" id="my_result" style="height:400px"></div>
 							</div>
 						</div>
 					</div>
@@ -44,7 +44,7 @@
 			
 			Webcam.set({
 				width: 320,
-				height: 240,
+				height: 400,
 				dest_width: 640,
 				dest_height: 480,
 				image_format: 'jpeg',

@@ -21,9 +21,13 @@
                         <a href="{{ route('colortypes.edit', [$colortype->id]) }}" class="mr-2" title="edit">
                             <i class="far fa-edit text-primary" aria-hidden="true"></i>
                         </a>
-                        <a href="{{ route('colortypes.delete', [$colortype->id]) }}" title="delete">
-                            <i class="fa fa-trash text-danger" aria-hidden="true"></i>
-                        </a>
+                        <form method="POST" action="{{ route('colortypes.delete', [$colortype->id])}}" id="my_form">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                            <a href="javascript:{}" onclick="document.getElementById('my_form').submit();">
+                                <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                            </a>
+                        </form>
                     </td>
                 </tr>
             @empty

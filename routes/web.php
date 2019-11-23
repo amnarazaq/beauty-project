@@ -26,7 +26,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
        Route::post('/create', 'Admin\BrandController@store')->name('brands.store');
        Route::get('/{brand}/edit', 'Admin\BrandController@edit')->name('brands.edit');
        Route::patch('/{brand}/edit', 'Admin\BrandController@update')->name('brands.update');
-       Route::delete('/{brand}/delete', 'Admin\BrandController@delete')->name('brands.delete');
+       Route::delete('/{brand}/delete', 'Admin\BrandController@destroy')->name('brands.delete');
        
     });
 
@@ -40,7 +40,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
         Route::post('/create', 'Admin\CategoryColorTypeController@store')->name('colortypes.store');
         Route::get('/{categorycolortype}/edit', 'Admin\CategoryColorTypeController@edit')->name('colortypes.edit');
         Route::patch('/{categorycolortype}/edit', 'Admin\CategoryColorTypeController@update')->name('colortypes.update');
-        Route::delete('/{categorycolortype}/delete', 'Admin\CategoryColorTypeController@delete')->name('colortypes.delete');
+        Route::delete('/{categorycolortype}/delete', 'Admin\CategoryColorTypeController@destroy')->name('colortypes.delete');
         
      });
 
@@ -50,7 +50,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
       Route::post('/create', 'Admin\CategoryController@store')->name('categories.store');
       Route::get('/{category}/edit', 'Admin\CategoryController@edit')->name('categories.edit');
       Route::patch('/{category}/edit', 'Admin\CategoryController@update')->name('categories.update');
-      Route::delete('/{category}/delete', 'Admin\CategoryController@delete')->name('categories.delete');
+      Route::delete('/{category}/delete', 'Admin\CategoryController@destroy')->name('categories.delete');
       
    });
 
@@ -60,7 +60,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
         Route::post('/create', 'Admin\ProductController@store')->name('products.store');
         Route::get('/{product}/edit', 'Admin\ProductController@edit')->name('products.edit');
         Route::patch('/{product}/edit', 'Admin\ProductController@update')->name('products.update');
-        Route::delete('/{product}/delete', 'Admin\ProductController@delete')->name('products.delete');
+        Route::delete('/{product}/delete', 'Admin\ProductController@destroy')->name('products.delete');
      });
 
      Route::group(['prefix' => 'users'], function() {
