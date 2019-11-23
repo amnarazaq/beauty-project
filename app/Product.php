@@ -14,7 +14,7 @@ class Product extends Model
      */
     public $timestamps = false;
     
-    const IMAGE_FOLDER ='/images/products/{{ category_id }}/{{ brand_id }}';
+    const IMAGE_FOLDER ='/images/products';
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -28,5 +28,10 @@ class Product extends Model
     public function color_type()
     {
         return $this->belongsTo(CategoryColorType::class);
+    }
+
+    public function getImageAttribute(string $value): string
+    {
+        return self::IMAGE_FOLDER . '/' . $this->category->id . '/' . $this->brand->id . '/' . $value;
     }
 }
