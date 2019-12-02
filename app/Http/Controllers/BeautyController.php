@@ -1,15 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Brand;
-use App\Category;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Product;
-use App\User;
 
-class AdminController extends Controller
+class BeautyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,12 +13,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $users = User::all()->count();
-        $categories = Category::all()->count();
-        $products = Product::all()->count();
-        $brands = Brand::all()->count();
-
-        return view('admin.index',compact('users','categories','products', 'brands'));
+        return veiw('show-beauty');
     }
 
     /**
@@ -44,7 +34,7 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**

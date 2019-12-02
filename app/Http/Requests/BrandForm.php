@@ -32,7 +32,7 @@ class BrandForm extends FormRequest
         }
 
         return [
-            'name' => 'required|max:50|regex:/^[\pL\s\-]+$/u|unique:brands,name,' . $this->brand->id,
+            'name' => 'required|max:50|regex:/^[\pL\s\-]+$/u|unique:brands,name,' .$this->brand->id,
             'logo' => $logo,
         ];
     }

@@ -8,7 +8,7 @@
 }
 .img-fluid {
   max-width: 100%;
-  height: 70px;
+  height: 65px;
 }
 #navbarSupportedContent {
 	.navbar-nav {
@@ -52,6 +52,36 @@
   position: absolute;
   width: 100%;
 }
+/******* Contact Us *******/
+#contact-us {
+  background-image: url("/images/contact-us1.jpg");
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-us::before{
+  background-color: rgba(255, 255, 255, 0.4);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.contact-title{
+  border-radius: 5px;
+  height:150px;
+  color: white;
+  
+  background:
+    linear-gradient(
+      rgba(54,84,99,0.7), 
+      rgba(100,84,99,0.7)
+    ), url("/images/bg-contact.jpg") no-repeat center center;
+
+    background-size: cover;
+}
 
 /******* How It Works *******/
 #how-it-works {
@@ -72,5 +102,42 @@
 }
 .content {
     min-height: 100vh;
-    padding-top:$nav-height;
+}
+.btn-cam {
+  background-color:white;
+  border-color:#f66d9b;
+  color:#f66d9b;
+}
+.btn-cam:hover{
+  background-color:#f66d9b;
+  color: white;
+  border-color: #f66d9b;
+}
+.radio label:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.radio .cr{
+  display: inline-block;
+  border: 1px solid #f66d9b;
+  border-radius: .25em;
+  width: 100px;
+}
+
+.radio label input[type="radio"]{
+  display: none;
+}
+
+
+
+.radio label input[type="radio"]:checked + .cr {
+  background-color: #f66d9b;
+  color: white;
+}
+
+.lb-check{
+  color: #f66d9b;
+  font-size: 1em;
 }
