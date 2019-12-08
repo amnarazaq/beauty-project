@@ -1,29 +1,34 @@
 @extends('layouts.app')
 @section('main-banner')
-<section id="banner" class="col-sm-12">
-    <div class="d-flex justify-content-center col-sm-8 align-items-center h-100 container">
-    	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active ">
-            	<div class="title d-flex justify-content-center  col-sm-10" style="font-family:  Arial Black"><h1>Welcome</h1></div>
-				<div class="description" style="font-family:  Georgia;">
-				  <h2>To a Glamorous Beauty website</h2>
-					@auth 
-						<a href="{{ route('home') }}" class="btn btn-cam">Try Virtual Look</a>
-					@endauth
-					@guest
-					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
-						Try Virtual Look
-					</button>
-					@endguest
-				</div>
-            </div>
-            <div class="carousel-item">
-              <div class="description d-flex justify-content-center col-sm-10" style="font-family:  Arial Black;"><h1>A thing of beauty is a joy forever for women</h1></div>
-            </div>
-          </div>
+<section id="banner">
+<div id="slider">
+	<!-- Navigation -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image:url('/images/slide1.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">First Slide</h2>
+          <p class="lead">This is a description for the first slide.</p>
         </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item"style="background-image:url('/images/banner.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Second Slide</h2>
+          <p class="lead">This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item"style="background-image:url('/images/slide3.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+      </div>
     </div>
+    </div>
+</div>
 </section>
 @stop
 @section('content')

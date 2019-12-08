@@ -1,10 +1,17 @@
-#banner {
-	background-size: cover;
-    background-image: url("/images/banner22.jpg");
-    height: 100vh;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
+#slider {
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+.carousel-item {
+  color:black;
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .img-fluid {
   max-width: 100%;
