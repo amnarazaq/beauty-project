@@ -3,24 +3,52 @@
 <section id="banner">
 <div id="slider">
 	<!-- Navigation -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image:url('/images/slide1.jpg')">
+      <div class="carousel-item active" style="background-image:url('/images/slider-image/slide1.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="display-4">First Slide</h2>
           <p class="lead">This is a description for the first slide.</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/banner.jpg')">
+      <div class="carousel-item"style="background-image:url('/images/slider-image/slide2.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="display-4">Second Slide</h2>
           <p class="lead">This is a description for the second slide.</p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/slide3.jpg')">
+      <div class="carousel-item"style="background-image:url('/images/slider-image/slide3.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+	  </div>
+	  <!-- Slide four - Set the background image for this slide in the line below -->
+      <div class="carousel-item"style="background-image:url('/images/slider-image/slide4.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+	  </div>
+	  <!-- Slide five - Set the background image for this slide in the line below -->
+      <div class="carousel-item"style="background-image:url('/images/slider-image/slide5.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+	  </div>
+	  <!-- Slide six - Set the background image for this slide in the line below -->
+      <div class="carousel-item"style="background-image:url('/images/slider-image/slide6.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+	  </div>
+	  <!-- Slide seven - Set the background image for this slide in the line below -->
+      <div class="carousel-item"style="background-image:url('/images/slider-image/slide7.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="display-4">Third Slide</h2>
           <p class="lead">This is a description for the third slide.</p>

@@ -14,9 +14,6 @@
 Route::get('/', function () {
     return view('pages.home');
 });
-Route::get('/beauty', function () {
-   return view('show-beauty');
-});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/beauty', 'BeautyController@store')->name('show-beauty');

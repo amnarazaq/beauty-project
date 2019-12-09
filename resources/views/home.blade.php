@@ -165,21 +165,19 @@
 		Webcam.attach('#my-camera');
 		document.getElementById('my_result').style.display = 'none'
 		document.getElementById('my-camera').style.display = 'block'
+		$('#cameraImage').remove();
 	}		
 
 	function take_snapshot() {
 		Webcam.snap( function(data_uri) {
-			console.log(data_uri)
 			document.getElementById('my_result').innerHTML = '<img width="269px" height="300px" src="'+data_uri+'"/>';
 			form = document.getElementById('beautyForm');
-			console.log(form)
-			form.append('uploadImageInput', data_uri)
+			$('#beautyForm').append($('<input type="hidden" id="cameraImage" name="cameraImage" value="'+data_uri+'">'));
 		});
 
 		document.getElementById('my_result').style.display = 'block'
 		Webcam.reset();
 		document.getElementById('my-camera').style.display = 'none'
-		// send request to backend to fetch picture information from AI.
 	}
 </script>
 @stop

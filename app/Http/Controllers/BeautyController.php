@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Faker\Provider\Image;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class BeautyController extends Controller
 {
@@ -34,7 +37,25 @@ class BeautyController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $lookChoice = $request->get('lookChoice');
+        $dressColor = $request->get('dressColor');
+
+        $user = Auth::user();
+        $fileName = 'users/' . $user->id . '/original.jpeg';
+        if ($request->has('cameraImage')) {
+            $photo =$request->get('cameraImage');
+            if(strlen($photo) > 128) {
+                list($ext, $data)   = explode(';', $photo);
+                list(, $data)       = explode(',', $data);
+                $data = base64_decode($data);
+                Storage::disk('public')->put($fileName, $data);
+            }
+        } else {
+            $image = $request->file('picture');
+            Storage::disk('public')->put($fileName, $image->get());
+        }
+
+        return view('show-beauty', compact('user'));
     }
 
     /**
