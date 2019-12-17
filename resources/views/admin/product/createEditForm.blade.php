@@ -90,14 +90,21 @@
     
     $(document).ready(function($) {
       // Example using an event, to change the color of the .jumbotron background:
-      $('#ProductColorCodeHex').on('input', function(event) {
-          if (event.target.value.length < 3) {
+      let selectedColor = "{{ old('color_code_hex') ? old('color_code_hex') : (isset($product) ? $product->color_code_hex : '') }}"
+      if( selectedColor != "") {
+        setHexBackground()
+      }
+      $('#ProductColorCodeHex').on('input', setHexBackground);
+    });
+
+    function setHexBackground() {
+        let color = $('#ProductColorCodeHex').val()
+        if (color.length < 3) {
             $('#ProductColorCodeHex').css('background-color', '#fff');
           } else {
-            $('#ProductColorCodeHex').css('background-color', '#' + event.target.value);
+            $('#ProductColorCodeHex').css('background-color', '#' + color);
           }
-      });
-    });
+    }
 
     function readURL(input) {
         if (input.files && input.files[0]) {
