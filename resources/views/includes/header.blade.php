@@ -1,5 +1,5 @@
-<nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top fixed-top px-5" style="height:70px">
-  <a class="navbar-brand" href="{{ url('/')}}"><img src="{{asset('/images/Logo.jpg')}}"  class="img-fluid"/></a>
+<nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top fixed-top px-5" style="height:75px">
+  <a class="navbar-brand" href="{{ url('/')}}"><img src="{{asset('/images/logoG.gif')}}"  class="img-fluid"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

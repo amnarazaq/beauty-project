@@ -66,7 +66,7 @@
                 </div>
                 <div class="form-group">
                     <label for="productColorName">Product Color Name</label>
-                    <input type="text" value="{{ old('color_name') ? old('color_name') : (isset($product) ? $product->color_name : '') }}" name="colorName" class="form-control {{ $errors->has('color_name') ? 'is-invalid' : ''}} " id="ProductColorName" placeholder="Enter Product Color Name">
+                    <input type="text" value="{{ old('color_name') ? old('color_name') : (isset($product) ? $product->color_name : '') }}" name="color_name" class="form-control {{ $errors->has('color_name') ? 'is-invalid' : ''}} " id="ProductColorName" placeholder="Enter Product Color Name">
                     @if ($errors->has('color_name'))
                         <div class="error text-danger"><small>{{ $errors->first('color_name') }}</small></div>
                     @endif
@@ -87,6 +87,7 @@
 @stop
 @section('custom-js')
 <script type="text/javascript">
+    
     $(document).ready(function($) {
       // Example using an event, to change the color of the .jumbotron background:
       $('#ProductColorCodeHex').on('input', function(event) {
@@ -97,6 +98,7 @@
           }
       });
     });
+
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();

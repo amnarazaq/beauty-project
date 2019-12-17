@@ -13,6 +13,7 @@
                 <th scope="col">Brand</th>
                 <th scope="col">Name</th>
                 <th scope="col">Color</th>
+                <th scope="col">Color Type</th>
                 <th scope="col">Actions</th>
             </tr> 
         </thead>
@@ -30,6 +31,7 @@
                         <div width="32px" height="32px" style="background-color:#{{ $product->color_code_hex }};">&nbsp;</div>
                         {{ $product->color_name }}
                     </td>
+                    <td class="align-middle">{{ $product->color_type->name }}</td>
                     <td class="align-middle">
                     <a href="{{ route('products.edit', [$product->id]) }}" class="mr-2" title="edit">
                         <i class="far fa-edit text-primary" aria-hidden="true"></i>

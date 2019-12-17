@@ -27,7 +27,7 @@ class Product extends Model
     
     public function color_type()
     {
-        return $this->belongsTo(CategoryColorType::class);
+        return $this->belongsTo(CategoryColorType::class, 'category_color_type_id');
     }
 
     public function getImageAttribute(string $value): string

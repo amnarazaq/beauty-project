@@ -3,51 +3,99 @@
 <section id="banner">
 <div id="slider">
 	<!-- Navigation -->
-  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image:url('/images/slider-image/slide1.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">First Slide</h2>
-          <p class="lead">This is a description for the first slide.</p>
-        </div>
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/slider-image/slide2.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Second Slide</h2>
-          <p class="lead">This is a description for the second slide.</p>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/slider-image/slide3.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
-        </div>
-	  </div>
+		<div class="carousel-item active" style="background-image:url('/images/slider-image/slide1.jpg')">
+			<div class="row d-flex"style="margin-top: 250px;">
+				<div class="col-sm-6">
+					<div class="title d-flex justify-content-center">
+						<h1  style="font-family:  Arial Black">Welcome</h1>
+					</div>
+					<div class="description d-flex justify-content-center" style="font-family:  Georgia;">
+						<h2>To a Glamorous Beauty</h2>
+					</div>
+					<div class="d-flex justify-content-center">
+						@auth 
+							<a href="{{ route('home') }}" class="btn btn-cam">Try Virtual Look</a>
+						@endauth
+						@guest
+						<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+							Try Virtual Look
+						</button>
+						@endguest
+					</div>
+				</div>
+			</div>
+		</div>
+     <!-- Slide Two - Set the background image for this slide in the line below -->
+	<div class="carousel-item"style="background-image:url('/images/slider-image/slide2.jpg')">
+		<div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6 offset-md-6 float-sm-right">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black">Staying in</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia;">
+					<h2>style forever</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam">Try Virtual Look</a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+    </div>
+       <!-- Slide Three - Set the background image for this slide in the line below -->
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide3.jpg')">
+	  <div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black; color:white">Creativity</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia; color:white">
+					<h2>is your best makeup skill, don't be afraid to experiment</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam">Try Virtual Look</a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+	</div>
 	  <!-- Slide four - Set the background image for this slide in the line below -->
       <div class="carousel-item"style="background-image:url('/images/slider-image/slide4.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
+        <div class="d-none d-md-block">
+          <h2 class="">Third Slide</h2>
           <p class="lead">This is a description for the third slide.</p>
         </div>
 	  </div>
-	  <!-- Slide five - Set the background image for this slide in the line below -->
+	 <!-- Slide five - Set the background image for this slide in the line below -->
       <div class="carousel-item"style="background-image:url('/images/slider-image/slide5.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="display-4">Third Slide</h2>
           <p class="lead">This is a description for the third slide.</p>
         </div>
 	  </div>
-	  <!-- Slide six - Set the background image for this slide in the line below -->
+	<!--   Slide six - Set the background image for this slide in the line below -->
       <div class="carousel-item"style="background-image:url('/images/slider-image/slide6.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="display-4">Third Slide</h2>
           <p class="lead">This is a description for the third slide.</p>
         </div>
 	  </div>
-	  <!-- Slide seven - Set the background image for this slide in the line below -->
+	 <!--  Slide seven - Set the background image for this slide in the line below -->
       <div class="carousel-item"style="background-image:url('/images/slider-image/slide7.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="display-4">Third Slide</h2>
@@ -82,9 +130,6 @@
 <section id="contact-us">
 <div class="container py-5">
 	<div class="row">
-		<div class="col-md-6">
-			
-		</div>
         <div class="col-md-6">
         	<div class="well well-sm">
           		<form class="form-horizontal" action="" method="post">
@@ -125,7 +170,10 @@
           			</fieldset>
           		</form>
         	</div>
-      	</div>
+		  </div>
+		  <div class="col-md-6">
+			
+		</div>
 	</div>
 </div>
 </section>

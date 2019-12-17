@@ -48,14 +48,14 @@ class ProductController extends Controller
         $filename = preg_replace("![^a-z]+!i", "-", $request->name);
         $image = $request->file('image');
         $filename = $filename .  '.' . $image->getClientOriginalExtension();
-        $destinationPath = public_path('/images/products/{{ category_id }}/{{ brand_id }}');
+        $destinationPath = public_path('/images/products/' . $request->category . '/'. $request->brand . '/');
         $image->move($destinationPath, $filename);
 
         $product = new Product();
         $product->name = $request->name;
-        $product->brand = $request->brand;
-        $product->category = $request->category;
-        $product->color_type = $request->color_type;
+        $product->brand_id = $request->brand;
+        $product->category_id = $request->category;
+        $product->category_color_type_id = $request->color_type;
         $product->image = $filename;
         $product->color_name = $request->color_name;
         $product->color_code_hex = $request->colorCodeHex;
@@ -108,15 +108,15 @@ class ProductController extends Controller
             $filename = preg_replace("![^a-z]+!i", "-", $request->name);
             $image = $request->file('image');
             $filename = $filename .  '.' . $image->getClientOriginalExtension();
-            $destinationPath = public_path('/images/brands/{{ category_id }}/{{ brand_id }}');
+            $destinationPath = public_path('/images/products/' . $request->category . '/'. $request->brand . '/');
             $image->move($destinationPath, $filename);
             $product->image = $filename;
         }
 
         $product->name = $request->name;
-        $product->brand = $request->brand;
-        $product->category = $request->category;
-        $product->color_type = $request->color_type;
+        $product->brand_id = $request->brand;
+        $product->category_id = $request->category;
+        $product->category_color_type_id = $request->color_type;
         $product->color_name = $request->color_name;
         $product->color_code_hex = $request->colorCodeHex;
         $product->save();

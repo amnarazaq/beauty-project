@@ -27,12 +27,14 @@ class ProductForm extends FormRequest
     {
         if (Request::isMethod('patch')) {
             $image = 'nullable|max:2048';
+            $name = ',name,' . $this->get('id');
         } else {
             $image = 'required|max:2048';
+            $name = '';
         }
 
         return [
-            'name' => 'required|max:50|regex:/^[\pL\s\-]+$/u|unique:products,name,' . $this->product->id,
+            'name' => 'required|max:50|regex:/^[\pL\s\-]+$/u|unique:products' . $name,
             'image' => $image,
         ];
     }
