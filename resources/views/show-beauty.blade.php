@@ -52,7 +52,7 @@
                 <p class="pl-4 pr-5">So that makeup blends in easily‚ first wash with cleanser and a cloth to gently exfoliate your face.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/1.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -63,7 +63,7 @@
                 <p class="pl-4 pr-5">With any kind of lotion or primer so that foundation can easily set on your face.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/2.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/2.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -74,7 +74,7 @@
                 <p class="pl-4 pr-5">For visible breakouts,any dark spots or deep undereye circles, use a pigment-rich concealer for even tone your skin.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/3.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -85,7 +85,7 @@
                 <p class="pl-4 pr-5">Which match with your skin color.We prefer this foundation that our expert AI team found by matching it with your skin color.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/4.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -96,7 +96,7 @@
                 <p class="pl-4 pr-5">If your skin gets shiny, follow with an oil-absorbing powder.Or if your skin is very oily, skip the tinted moisturizer and use only concealer and powder.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/5.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -107,7 +107,7 @@
                 <p class="pl-4 pr-5">If you need to contour your face you can do it. Apply this warm cheek color to add glow on your skin.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/6.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -118,7 +118,7 @@
                 <p class="pl-4 pr-5">as our AI team select and done on your eyes according to your dress color and event for which you want to do makeup.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/7.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -129,7 +129,7 @@
                 <p class="pl-4 pr-5">by using brown pencil.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/8.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -140,7 +140,7 @@
                 <p class="pl-4 pr-5">As we select according to your eyes shape.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/9.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -151,7 +151,7 @@
                 <p class="pl-4 pr-5">Applying mascara or lash extension.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/10.jpg') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -162,7 +162,7 @@
                 <p class="pl-4 pr-5">Use this lip color which perfectly suits you..</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/11.png') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">
@@ -173,7 +173,7 @@
                 <p class="pl-4 pr-5">such that your cheek bone, upper lip point and lower lip point or under your eyebrow.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" width:150px height:150px src="{{ asset('/images/toturial-image/1.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/12.jpg') }}">
             </div>
         </div>
     </div>

@@ -10,10 +10,10 @@
         <a class="nav-link" href="./#app">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item px-3">
-        <a class="nav-link" href="./#about-us">About</a>
+        <a class="nav-link" href="./#how-it-works">How it Works</a>
       </li>
       <li class="nav-item px-3">
-        <a class="nav-link" href="./#how-it-works">How it Works</a>
+        <a class="nav-link" href="./#about-us">About</a>
       </li>
       <li class="nav-item px-3">
         <a class="nav-link" href="./#contact-us">Contact Us</a>

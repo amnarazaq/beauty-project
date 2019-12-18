@@ -43,8 +43,30 @@
 }
 
 /******* About Us *******/
+.about-us-div{
+  -webkit-clip-path: ellipse(70% 49% at 50% 30%);
+  height:100%;
+  clip-path: ellipse(70% 49% at 50% 30%);
+  background-image: url('/images/about-us.jpg');
+  left: 0;
+  right: 0;
+  position:absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-us-div::before{
+  -webkit-clip-path: ellipse(70% 49% at 50% 30%);
+  height:100%;
+  clip-path: ellipse(70% 49% at 50% 30%);
+  left: 0;
+  right: 0;
+  position:absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.6);
+}
 #about-us {
-  background-image: url("/images/about_us_background.jpg");
+  background-color: #ffeef2;
   min-height: 100vh; 
   background-attachment: fixed;
   background-position: center;
@@ -52,7 +74,7 @@
   background-size: cover;
 }
 #about-us::before{
-  background-color: rgba(255, 255, 255, 0.37);
+  background-color: #ffeef2;
   content: '';
   display: block;
   height: 100%;
@@ -92,7 +114,7 @@
 
 /******* How It Works *******/
 #how-it-works {
-  background-image: url("/images/how-work.jpg");
+  background-color: rgb(242, 242, 242);
   min-height: 100vh; 
   background-attachment: fixed;
   background-position: center;
@@ -100,7 +122,7 @@
   background-size: cover;
 }
 #how-it-works::before{
-  background-color: rgba(255, 255, 255, 0.37);
+  background-color: rgb(242, 242, 242);
   content: '';
   display: block;
   height: 100%;

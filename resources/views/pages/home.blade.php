@@ -172,56 +172,73 @@
 </section>
 @stop
 @section('content')
-<section id="about-us">
-	<div class="container py-5">
-		<div class="row">
-			<div class="col-sm-12 text-center"><strong><h2 style="font-family:  Arial Black">About Us</h2></strong></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 offset-lg-5 col-lg-7 mt-3"style="font-family:  Georgia">
-				<h5>Whether you want a new look for a special occasion or you want to do regular makeup this website will help you in choosing a look which suits you perfect in few minutes. This website is for ease of customers to decide which look will suits on them and which product is suitable for their skin in less time.</h5>
-			</div>
-		</div>
-	</div>
-</section>
 <section id="how-it-works">
 	<div class="container py-5">
 		<div class="row">
 			<div class="col-sm-12 text-left ml-5"><strong><h2  style="font-family:  Arial Black">How it Works</h2></strong></div>
 		</div>
-		<div class="row d-flex justify-content-center">
+		<div class="row d-flex justify-content-center mt-5">
+			<div class="col-sm-12 text-center mb-4" >
+				<h2>Advance technology use behind virtual trials</h2>
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center mt-5">
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/facial.jpg" alt="">
 				</div>
-				<div class="text-center">
+				<div class="text-center mt-2">
 					<p><b>FACIAL TECHNOLOGY</b></p>
+					<div class="text-center mt-4">
+						Real time, live, and hyper-realistic technology recognizes even the smallest facial details and skin tone textures
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/makeup.jpg" alt="">
 				</div>
-				<div class="text-center">
+				<div class="text-center mt-2">
 					<p><b>MAKEUP VERSATILITY</b></p>
 				</div>
+				<div class="text-center mt-4">
+					Wide range of makeup effects, including lipstick, blush, eyeliner, and eyeshadow
+				</div>
 			</div>
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/full-makeup.jpg" alt="">
 				</div>
-				<div class="text-center">
+				<div class="text-center mt-2">
 					<p><b>FULL MAKEOVERS</b></p>
 				</div>
+				<div class="text-center mt-4">
+					Complete looks combined with multiple products to create amazing makeovers				
+				</div>
 			</div>
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/compare.jpg" alt="">
 				</div>
-				<div class="text-center">
+				<div class="text-center mt-2">
 					<p style="margin-bottom: 0PX"><b>COMPARE BEFORE AND</b></p>
 					<span><b>AFTER</b></span>
+					<div class="text-center mt-2">
+						Let see the effects of our products
+					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="about-us">
+	<div class="container about-us-div mt-5">
+		<div class="row">
+			<div class="col-sm-12 text-center mt-5"><strong><h2 style="font-family:  Arial Black">About Us</h2></strong></div>
+		</div>
+		<div class="row">
+			<div class="text-center mt-5  col-md-6 offset-md-3 pt-2"style="font-family:  Georgia;">
+				<h5>Whether you want a new look for a special occasion or you want to do regular makeup this website will help you in choosing a look which suits you perfect in few minutes. This website is for ease of customers to decide which look will suits on them and which product is suitable for their skin in less time.</h5>
 			</div>
 		</div>
 	</div>
@@ -229,7 +246,7 @@
 <section id="contact-us">
 <div class="container py-5">
 	<div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 offset-md-3">
         	<div class="well well-sm">
           		<form class="form-horizontal" action="" method="post">
           			<fieldset style="background-color:white; border-radius:5px">
@@ -270,9 +287,6 @@
           		</form>
         	</div>
 		  </div>
-		  <div class="col-md-6">
-			
-		</div>
 	</div>
 </div>
 </section>
