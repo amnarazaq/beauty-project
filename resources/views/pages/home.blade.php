@@ -17,7 +17,7 @@
 					</div>
 					<div class="d-flex justify-content-center">
 						@auth 
-							<a href="{{ route('home') }}" class="btn btn-cam">Try Virtual Look</a>
+							<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
 						@endauth
 						@guest
 						<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
@@ -40,7 +40,7 @@
 				</div>
 				<div class="d-flex justify-content-center">
 					@auth 
-						<a href="{{ route('home') }}" class="btn btn-cam">Try Virtual Look</a>
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
 					@endauth
 					@guest
 					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
@@ -56,14 +56,14 @@
 	  <div class="row d-flex"style="margin-top: 250px;">
 			<div class="col-sm-6">
 				<div class="title d-flex justify-content-center">
-					<h1  style="font-family:  Arial Black; color:white">Creativity</h1>
+					<h1  style="font-family:  Arial Black;">Creativity</h1>
 				</div>
-				<div class="description d-flex justify-content-center" style="font-family:  Georgia; color:white">
+				<div class="description d-flex justify-content-center text-center" style="font-family:  Georgia;">
 					<h2>is your best makeup skill, don't be afraid to experiment</h2>
 				</div>
 				<div class="d-flex justify-content-center">
 					@auth 
-						<a href="{{ route('home') }}" class="btn btn-cam">Try Virtual Look</a>
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
 					@endauth
 					@guest
 					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
@@ -75,33 +75,97 @@
 		</div>
 	</div>
 	  <!-- Slide four - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/slider-image/slide4.jpg')">
-        <div class="d-none d-md-block">
-          <h2 class="">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
-        </div>
-	  </div>
+	<div class="carousel-item"style="background-image:url('/images/slider-image/slide4.jpg')">
+		<div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6 offset-md-6 float-sm-right">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black">The Future</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia;color:white">
+					<h2>of beauty is here</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+	</div>
 	 <!-- Slide five - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/slider-image/slide5.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
-        </div>
-	  </div>
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide5.jpg')">
+	    <div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black; color:white">Complete looks</h1>
+				</div>
+				<div class="description d-flex justify-content-center text-center" style="font-family:  Georgia; color:white">
+					<h2>combined with multiple products to create amazing makeovers</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--   Slide six - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/slider-image/slide6.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
-        </div>
-	  </div>
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide6.jpg')">
+	  <div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6 offset-md-6 float-sm-right">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black">Staying in</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia;">
+					<h2>style forever</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam" ><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal" style="background-color:#C8AD98">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+	</div>
 	 <!--  Slide seven - Set the background image for this slide in the line below -->
-      <div class="carousel-item"style="background-image:url('/images/slider-image/slide7.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
-        </div>
-      </div>
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide7.jpg')">
+		<div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black; color:white">Tutorial</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia; color:white">
+					<h2>To get amazing look</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+    </div>
     </div>
     </div>
 </div>
@@ -124,6 +188,41 @@
 	<div class="container py-5">
 		<div class="row">
 			<div class="col-sm-12 text-left ml-5"><strong><h2  style="font-family:  Arial Black">How it Works</h2></strong></div>
+		</div>
+		<div class="row d-flex justify-content-center">
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+				</div>
+				<div class="text-center">
+					<p><b>FACIAL TECHNOLOGY</b></p>
+				</div>
+			</div>
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+				</div>
+				<div class="text-center">
+					<p><b>MAKEUP VERSATILITY</b></p>
+				</div>
+			</div>
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+				</div>
+				<div class="text-center">
+					<p><b>FULL MAKEOVERS</b></p>
+				</div>
+			</div>
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/image.png" alt="">
+				</div>
+				<div class="text-center">
+					<p style="margin-bottom: 0PX"><b>COMPARE BEFORE AND</b></p>
+					<span><b>AFTER</b></span>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
