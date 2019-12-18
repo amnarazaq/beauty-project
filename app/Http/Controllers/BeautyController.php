@@ -16,7 +16,7 @@ class BeautyController extends Controller
      */
     public function index()
     {
-        return veiw('show-beauty');
+        return view('show-beauty');
     }
 
     /**
@@ -41,7 +41,7 @@ class BeautyController extends Controller
         $dressColor = $request->get('dressColor');
 
         $user = Auth::user();
-        $fileName = 'users/' . $user->id . '/original.jpeg';
+        $fileName = 'users/' . $user->id . '/original.jpg';
         if ($request->has('cameraImage')) {
             $photo =$request->get('cameraImage');
             if(strlen($photo) > 128) {
@@ -54,6 +54,20 @@ class BeautyController extends Controller
             $image = $request->file('picture');
             Storage::disk('public')->put($fileName, $image->get());
         }
+
+        //execute python scripts
+        $cmd = sprintf('python %s %s %s %s %s',
+            storage_path('app/scripts/inputfile.py'), 
+            storage_path('app/public/' . $fileName),
+            $lookChoice,
+            $dressColor,
+            storage_path('app/testImages')
+        );
+        ob_start();
+        $output = [];
+        exec($cmd . " 2>&1", $output);
+        $result = ob_get_contents();
+        ob_end_clean();
 
         return view('show-beauty', compact('user'));
     }

@@ -23,14 +23,14 @@
             <div class="col-md-6 d-flex justify-content-center">
                 <div class="row">
                     <div class="col-md-12" id="before-makeup">
-                        <img width="270px" height="300px" src="{{ asset('storage/users/' . $user->id . '/original.jpeg') }}">
+                        <img width="270px" height="300px" src="{{ asset('storage/users/' . $user->id . '/original.jpg') }}">
                     </div>
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center">
                 <div class="row">
                     <div class="col-md-12" id="before-makeup">
-                        <img width="270px" height="300px" src="{{ asset('/images/camera.jpg') }}">
+                        <img width="270px" height="300px" src="{{ asset('storage/users/' . $user->id . '/result.jpg') }}">
                     </div>
                 </div>
             </div>
