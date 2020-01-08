@@ -13,6 +13,7 @@
                 <th scope="col">Brand</th>
                 <th scope="col">Name</th>
                 <th scope="col">Color</th>
+                <th scope="col">Color Type</th>
                 <th scope="col">Actions</th>
             </tr> 
         </thead>
@@ -30,13 +31,18 @@
                         <div width="32px" height="32px" style="background-color:#{{ $product->color_code_hex }};">&nbsp;</div>
                         {{ $product->color_name }}
                     </td>
+                    <td class="align-middle">{{ $product->color_type->name }}</td>
                     <td class="align-middle">
                     <a href="{{ route('products.edit', [$product->id]) }}" class="mr-2" title="edit">
-                            <i class="far fa-edit text-primary" aria-hidden="true"></i>
-                        </a>
-                        <a href="{{ route('products.delete', [$product->id]) }}" title="delete">
-                            <i class="fa fa-trash text-danger" aria-hidden="true"></i>
-                        </a>
+                        <i class="far fa-edit text-primary" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:{}" onclick="document.getElementById('my_form').submit();">
+                        <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                    </a>
+                       <form method="POST" action="{{ route('products.delete', [$product->id])}}" id="my_form">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                        </form>
                     </td>
                 </tr>
             @empty

@@ -27,12 +27,14 @@ class BrandForm extends FormRequest
     {
         if (Request::isMethod('patch')) {
             $logo = 'nullable|max:2048';
+            $name = ',name,'. $this->get('id');
         } else {
             $logo = 'required|max:2048';
+            $name = '';
         }
 
         return [
-            'name' => 'required|max:50|regex:/^[\pL\s\-]+$/u|unique:brands,name,' . $this->brand->id,
+            'name' => 'required|max:50|regex:/^[\pL\s\-]+$/u|unique:brands' . $name,
             'logo' => $logo,
         ];
     }

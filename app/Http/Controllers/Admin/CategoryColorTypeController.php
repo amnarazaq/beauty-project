@@ -91,6 +91,6 @@ class CategoryColorTypeController extends Controller
     public function destroy(CategoryColorType $categorycolortype)
     {
         $categorycolortype->delete();
-        return redirect()->back();
+        return redirect()->route('colortypes')->with('success',  'Category color type Successfully deleted.');
     }
 }

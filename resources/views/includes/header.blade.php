@@ -1,5 +1,5 @@
-<nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top fixed-top px-5">
-  <a class="navbar-brand" href="{{ url('/')}}"><img src="{{asset('/images/Logo.jpg')}}"  class="img-fluid"/></a>
+<nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top fixed-top px-5" style="height:75px">
+  <a class="navbar-brand" href="{{ url('/')}}"><img src="{{asset('/images/logoG.gif')}}"  class="img-fluid"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,16 +7,16 @@
   <div class="collapse navbar-collapse d-flex-lg justify-content-lg-around" id="navbarSupportedContent">
     <ul class="navbar-nav m-lg-auto">
       <li class="nav-item active px-3">
-        <a class="nav-link" href="#app">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="./#app">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item px-3">
-        <a class="nav-link" href="#about-us">About</a>
+        <a class="nav-link" href="./#how-it-works">How it Works</a>
       </li>
       <li class="nav-item px-3">
-        <a class="nav-link" href="#how-it-works">How it Works</a>
+        <a class="nav-link" href="./#about-us">About</a>
       </li>
       <li class="nav-item px-3">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="./#contact-us">Contact Us</a>
       </li>
     </ul>
     <ul class="navbar-nav">

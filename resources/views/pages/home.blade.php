@@ -1,43 +1,302 @@
 @extends('layouts.app')
 @section('main-banner')
-<header id="banner" class="col-sm-12">
-    <div class="d-flex justify-content-center col-sm-8 align-items-center h-100 container">
-    	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active ">
-              <div class="title d-flex justify-content-center  col-sm-10" style="font-family:  Arial Black"><h1>Welcome</h1></div>
-              <div class="description" style="font-family:  Georgia;"><h2>To a Glamorous Beauty website</h2></div>
-            </div>
-            <div class="carousel-item">
-              <div class="description d-flex justify-content-center col-sm-10" style="font-family:  Arial Black;"><h1>A thing of beauty is a joy forever for women</h1></div>
-            </div>
-          </div>
-        </div>
-    </div>
-</header>
-@stop
-@section('content')
-<section id="about-us">
-	<div class="container py-5">
-		<div class="row">
-			<div class="col-sm-12 text-center"><strong><h2 style="font-family:  Arial Black">About Us</h2></strong></div>
+<section id="banner">
+<div id="slider">
+	<!-- Navigation -->
+  <div class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+		<div class="carousel-item active" style="background-image:url('/images/slider-image/slide1.jpg')">
+			<div class="row d-flex"style="margin-top: 250px;">
+				<div class="col-sm-6">
+					<div class="title d-flex justify-content-center">
+						<h1  style="font-family:  Arial Black">Welcome</h1>
+					</div>
+					<div class="description d-flex justify-content-center" style="font-family:  Georgia;">
+						<h2>To a Glamorous Beauty</h2>
+					</div>
+					<div class="d-flex justify-content-center">
+						@auth 
+							<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+						@endauth
+						@guest
+						<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+							Try Virtual Look
+						</button>
+						@endguest
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12 offset-lg-5 col-lg-7 mt-3"style="font-family:  Georgia">
-				<h5>Whether you want a new look for a special occasion or you want to do regular makeup this website will help you in choosing a look which suits you perfect in few minutes. This website is for ease of customers to decide which look will suits on them and which product is suitable for their skin in less time.</h5>
+     <!-- Slide Two - Set the background image for this slide in the line below -->
+	<div class="carousel-item"style="background-image:url('/images/slider-image/slide2.jpg')">
+		<div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6 offset-md-6 float-sm-right">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black">Staying in</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia;">
+					<h2>style forever</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+    </div>
+       <!-- Slide Three - Set the background image for this slide in the line below -->
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide3.jpg')">
+	  <div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black;">Creativity</h1>
+				</div>
+				<div class="description d-flex justify-content-center text-center" style="font-family:  Georgia;">
+					<h2>is your best makeup skill, don't be afraid to experiment</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
 			</div>
 		</div>
 	</div>
+	  <!-- Slide four - Set the background image for this slide in the line below -->
+	<div class="carousel-item"style="background-image:url('/images/slider-image/slide4.jpg')">
+		<div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6 offset-md-6 float-sm-right">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black">The Future</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia;color:white">
+					<h2>of beauty is here</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+	</div>
+	 <!-- Slide five - Set the background image for this slide in the line below -->
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide5.jpg')">
+	    <div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black; color:white">Complete looks</h1>
+				</div>
+				<div class="description d-flex justify-content-center text-center" style="font-family:  Georgia; color:white">
+					<h2>combined with multiple products to create amazing makeovers</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--   Slide six - Set the background image for this slide in the line below -->
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide6.jpg')">
+	  <div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6 offset-md-6 float-sm-right">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black">Staying in</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia;">
+					<h2>style forever</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam" ><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal" style="background-color:#C8AD98">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+	</div>
+	 <!--  Slide seven - Set the background image for this slide in the line below -->
+    <div class="carousel-item"style="background-image:url('/images/slider-image/slide7.jpg')">
+		<div class="row d-flex"style="margin-top: 250px;">
+			<div class="col-sm-6">
+				<div class="title d-flex justify-content-center">
+					<h1  style="font-family:  Arial Black; color:white">Tutorial</h1>
+				</div>
+				<div class="description d-flex justify-content-center" style="font-family:  Georgia; color:white">
+					<h2>To get amazing look</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					@auth 
+						<a href="{{ route('home') }}" class="btn btn-cam"><b>Try Virtual Look</b></a>
+					@endauth
+					@guest
+					<button type="button" class="btn btn-cam" data-toggle="modal" data-target="#login-modal">
+						Try Virtual Look
+					</button>
+					@endguest
+				</div>
+			</div>
+		</div>
+    </div>
+    </div>
+    </div>
+</div>
 </section>
+@stop
+@section('content')
 <section id="how-it-works">
 	<div class="container py-5">
 		<div class="row">
 			<div class="col-sm-12 text-left ml-5"><strong><h2  style="font-family:  Arial Black">How it Works</h2></strong></div>
 		</div>
+		<div class="row d-flex justify-content-center mt-5">
+			<div class="col-sm-12 text-center mb-4" >
+				<h2>Advance technology use behind virtual trials</h2>
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center mt-5">
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/facial.jpg" alt="">
+				</div>
+				<div class="text-center mt-2">
+					<p><b>FACIAL TECHNOLOGY</b></p>
+					<div class="text-center mt-4">
+						Real time, live, and hyper-realistic technology recognizes even the smallest facial details and skin tone textures
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/makeup.jpg" alt="">
+				</div>
+				<div class="text-center mt-2">
+					<p><b>MAKEUP VERSATILITY</b></p>
+				</div>
+				<div class="text-center mt-4">
+					Wide range of makeup effects, including lipstick, blush, eyeliner, and eyeshadow
+				</div>
+			</div>
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/full-makeup.jpg" alt="">
+				</div>
+				<div class="text-center mt-2">
+					<p><b>FULL MAKEOVERS</b></p>
+				</div>
+				<div class="text-center mt-4">
+					Complete looks combined with multiple products to create amazing makeovers				
+				</div>
+			</div>
+			<div class="col-sm-3 justify-content-center">
+				<div>
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/compare.jpg" alt="">
+				</div>
+				<div class="text-center mt-2">
+					<p style="margin-bottom: 0PX"><b>COMPARE BEFORE AND</b></p>
+					<span><b>AFTER</b></span>
+					<div class="text-center mt-2">
+						Let see the effects of our products
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+</section>
+<section id="about-us">
+	<div class="container about-us-div mt-5">
+		<div class="row">
+			<div class="col-sm-12 text-center mt-5"><strong><h2 style="font-family:  Arial Black">About Us</h2></strong></div>
+		</div>
+		<div class="row">
+			<div class="text-center mt-5  col-md-6 offset-md-3 pt-2"style="font-family:  Georgia;">
+				<h5>Whether you want a new look for a special occasion or you want to do regular makeup this website will help you in choosing a look which suits you perfect in few minutes. This website is for ease of customers to decide which look will suits on them and which product is suitable for their skin in less time.</h5>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contact-us">
+<div class="container py-5">
+	<div class="row">
+        <div class="col-md-6 offset-md-3">
+        	<div class="well well-sm">
+          		<form class="form-horizontal" action="" method="post">
+          			<fieldset style="background-color:white; border-radius:5px">
+						<div class="contact-title">
+							<div class="col-sm-12 text-center form-title pt-4"><span><strong><h2  style="font-family: Arial Black">
+								Contact Us</h2></strong></span>
+								<span>Feel free to drop us a line below</span>
+							</div>
+						</div>
+           				 <!-- Name input-->
+            			<div class="row form-group m-2">
+             				<label class="col-md-3 control-label" for="contactName">Name</label>
+              				<div class="col-md-9">
+                				<input id="contactName" name="contactName" type="text" placeholder="Your name" class="form-control">
+              				</div>
+						</div>
+						<!-- Email input-->
+						<div class="row form-group m-2">
+							<label class="col-md-3 control-label" for="contactEmail">E-mail</label>
+							<div class="col-md-9">
+								<input id="contactEmail" name="contactEmail" type="text" placeholder="Your email" class="form-control">
+							</div>
+						</div>
+						<!-- Message body -->
+						<div class="row form-group m-2">
+							<label class="col-md-3 control-label" for="contactMessage">Message</label>
+							<div class="col-md-9">
+								<textarea class="form-control" id="contactMessage" name="contactMessage" placeholder="Please enter your message here..." rows="5"></textarea>
+							</div>
+						</div>
+						<!-- Form actions -->
+						<div class="form-group">
+							<div class="col-md-12 text-center">
+								<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+							</div>
+						</div>
+          			</fieldset>
+          		</form>
+        	</div>
+		  </div>
+	</div>
+</div>
 </section>
 @stop
 @section('modals')
 	@include('modals.login')
 	@include('modals.register')
+	<script type="text/javascript">
+		$('#register-modal').on('shown.bs.modal', function (e) {
+			$('#login-modal').modal('hide');
+		})
+	</script>
 @stop

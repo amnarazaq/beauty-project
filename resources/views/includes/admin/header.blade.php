@@ -3,21 +3,18 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand" href="#">
-    <img class="navbar-brand-full" src="{{asset('/images/Logo.jpg')}}" width="89" height="25" alt="Beauty">
-    <img class="navbar-brand-minimized" src="{{asset('/images/Logo.jpg')}}" width="30" height="30" alt="CoreUI Logo">
+    <img class="navbar-brand-full" src="{{asset('/images/logoG.gif')}}" width="89" height="25" alt="Beauty">
+    <img class="navbar-brand-minimized" src="{{asset('/images/minilogo.png')}}" width="30" height="30" alt="CoreUI Logo">
   </a>
-  <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
-    <span class="navbar-toggler-icon"></span>
-  </button>
   <ul class="nav navbar-nav d-md-down-none">
     <li class="nav-item px-3">
-      <a class="nav-link" href="#">Dashboard</a>
+      <a class="nav-link" href="{{ route('admin') }}">Dashboard</a>
     </li>
     <li class="nav-item px-3">
-      <a class="nav-link" href="#">Users</a>
+      <a class="nav-link" href="{{ route('users') }}">Users</a>
     </li>
     <li class="nav-item px-3">
-      <a class="nav-link" href="#">Settings</a>
+      <a class="nav-link" href="{{ route('settings') }}">Settings</a>
     </li>
   </ul>
   <ul class="nav navbar-nav ml-auto mr-4">
@@ -29,9 +26,7 @@
       <div class="dropdown-header text-center">
         <strong>{{ Auth::user()->name }}</strong>
       </div>
-      <a class="dropdown-item" href="#">
-        <i class="fa fa-user"></i> Profile</a>
-      <a class="dropdown-item" href="#">
+      <a class="dropdown-item" href="{{ route('settings') }}">
         <i class="fa fa-wrench"></i> Settings</a>
       <a class="dropdown-item" href="{{ route('logout') }}"
                       onclick="event.preventDefault();

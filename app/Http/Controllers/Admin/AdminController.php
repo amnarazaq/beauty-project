@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Brand;
+use App\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Product;
 use App\User;
 
 class AdminController extends Controller
@@ -16,9 +19,9 @@ class AdminController extends Controller
     public function index()
     {
         $users = User::all()->count();
-        $categories = 22;
-        $products = 58;
-        $brands = 10;
+        $categories = Category::all()->count();
+        $products = Product::all()->count();
+        $brands = Brand::all()->count();
 
         return view('admin.index',compact('users','categories','products', 'brands'));
     }

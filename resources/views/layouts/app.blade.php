@@ -5,9 +5,9 @@
   </head>
 
   <body id="app">
-    <section>
+    <header>
       @include('includes.header')
-    </section>
+    </header>
 
     <section class="content">
       @yield('content')
