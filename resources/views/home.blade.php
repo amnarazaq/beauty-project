@@ -20,7 +20,7 @@
 						Get The
 					</div>
 					<div class="banner-image-large">
-						<img alt="Get the look"src="{{ asset('/images/look.PNG') }}">
+						<img alt="Get the look"src="{{ asset('/images/look.png') }}">
 					</div>
 				</div>
 				<div class="row d-flex mt-3 ml-2 mr-2">
@@ -30,7 +30,7 @@
 								<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
 									font-size: 32px">Virtual</div>
 								<div class="banner-image-large">
-									<img alt="makeovers"src="{{ asset('/images/makeovers.PNG') }}">
+									<img alt="makeovers"src="{{ asset('/images/makeovers.png') }}">
 								</div>
 								<p class="mt-3 pl-2">Discover our virtual makeover & online makeup tools to help you find the best makeup products.You can find best foundation shade at our website.</p>
 							</div>
@@ -65,7 +65,7 @@
 						<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
 							font-size: 28px; padding-top:5px">Select</div>
 						<div class="banner-image-large">
-							<img alt="look2"src="{{ asset('/images/look2.PNG') }}">
+							<img alt="look2"src="{{ asset('/images/look2.png') }}">
 						</div>
 					</div>
 				</div>
@@ -108,7 +108,7 @@
 						<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
 							font-size: 28px; padding-top:4px">Select Dress</div>
 						<div class="banner-image-large">
-							<img alt="color" src="{{ asset('/images/color.PNG') }}">
+							<img alt="color" src="{{ asset('/images/color.png') }}">
 						</div>
 					</div>
 				</div>
