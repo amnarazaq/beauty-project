@@ -22,9 +22,13 @@ data.append(sys.argv[2])
 data.append(sys.argv[3])
 data.append(sys.argv[4])
 
+print('Passed Arguments are: \n')
+print('ImagePath: ' + data[0])
+print('MakeupType: ' + data[1])
+print('DressColorHex: ' + data[2])
+print('path: ' + data[3])
 
 #Database Connection
-
 conn=pymysql.connect( host='127.0.0.1' , user='root' , password='', db='beauty')
 
 

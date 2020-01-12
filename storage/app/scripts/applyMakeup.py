@@ -52,7 +52,7 @@ def applyMakeup(userImage, data):
     if applyFoundation:
         foundation_color= fo[2]
         f=foundation.get_Face_Points(landmarks)
-        image=foundation.apply_foundation(image,f, im_copy, landmarks, width, height, imm, foundation_color)
+        image=foundation.apply_foundation(image, f, im_copy, landmarks, width, height, imm, foundation_color)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         im_copy=image
 

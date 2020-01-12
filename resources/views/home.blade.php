@@ -9,7 +9,7 @@
 		<div class="container">
 			<form  enctype="multipart/form-data" method="POST" id="beautyForm" action="{{ route('show-beauty') }}">
 			@csrf
-				<div class="row d-flex justify-content-center" style="margin-top:75px">
+				<div class="row d-flex justify-content-center" style="margin-top:85px">
 					<div class="banner-image ">
 						<img class="" alt="Get the look"src="{{ asset('/images/model.png') }}">
 					</div>
@@ -20,7 +20,7 @@
 						Get The
 					</div>
 					<div class="banner-image-large">
-						<img alt="Get the look"src="{{ asset('/images/look.PNG') }}">
+						<img alt="Get the look"src="{{ asset('/images/look.png') }}">
 					</div>
 				</div>
 				<div class="row d-flex justify-content-md-between justify-content-sm-center flex-md-wrap mt-3 ml-2 mr-2">
@@ -30,7 +30,7 @@
 								<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
 									font-size: 32px">Virtual</div>
 								<div class="banner-image-large">
-									<img alt="makeovers"src="{{ asset('/images/makeovers.PNG') }}">
+									<img alt="makeovers"src="{{ asset('/images/makeovers.png') }}">
 								</div>
 								<p class="mt-3 pl-2">Discover our virtual makeover & online makeup tools to help you find the best makeup products.You can find best foundation shade at our website.</p>
 							</div>
@@ -67,15 +67,15 @@
 								<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
 									font-size: 28px; padding-top:5px">Select</div>
 								<div class="banner-image-large">
-									<img alt="look2"src="{{ asset('/images/look2.PNG') }}">
+									<img alt="look2"src="{{ asset('/images/look2.png') }}">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">	
-					<div class="col-sm-12 col-md-6">
-						<div class="d-flex justify-content-around">
+					<div class="col-sm-12 col-md-5 ml-2 mt-2">
+						<div class="d-flex justify-content-between">
 							<div class="radio">
 								<label class="lb-check">
 									<input type="radio" name="lookChoice" class="choice" value="bridal">
@@ -104,24 +104,24 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 col-md-4">
+					<div class="col-sm-12 col-md-4 mt-2">
 						<div class="row">
 							<div class="col-sm-12 d-flex">
 								<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
 									font-size: 28px; padding-top:4px">Select Dress</div>
 								<div class="banner-image-large">
-									<img alt="color" src="{{ asset('/images/color.PNG') }}">
+									<img alt="color" src="{{ asset('/images/color.png') }}">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 col-md-4 pb-3">
+					<div class="col-sm-12 col-md-4 pb-3 ml-2 mt-2">
 						<input type="color" name="dressColor" value="#FF1493" style="width:100%;">
 					</div>
 				</div>
-				<div class="d-flex justify-content-center">
+				<div class="d-flex justify-content-center mt-2">
 					<button class="btn btn-cam" type="submit" ><i class="fas fa-grin-hearts"></i> <b>Show Beauty</b></button>
 				</div>
 			</form>

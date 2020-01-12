@@ -6,8 +6,8 @@ def getProducts(conn, data):
     response = {}
 
     queryTextWithID ="SELECT id, name, color_code_hex FROM products WHERE category_color_type_id={0} AND category_id={1}"
-    queryTextWithHex = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={0} OR color_code_hex='{1}'"
-    queryTextWithHexID = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} OR color_code_hex='{2}'"
+    queryTextWithHex = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} AND  color_code_hex='{2}'"
+    queryTextWithHexID = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} AND  color_code_hex='{2}'"
 
     for key, category in data.items():
         if key == 'lipstick' or key == 'blush':
@@ -50,7 +50,7 @@ def getDefaultProducts(conn, data):
         categoryId = e_shadow.get('category_id')
         colorCodeHex = e_shadow.get('color_code_hex')
         categoryColorType = e_shadow.get('category_color_type_id')
-        query = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} OR color_code_hex='{2}'".format(categoryId,categoryColorType, colorCodeHex)
+        query = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} AND color_code_hex='{2}'".format(categoryId,categoryColorType, colorCodeHex)
         cursor.execute(query)
         response['e_shadow'] = cursor.fetchone()
 
@@ -60,7 +60,7 @@ def getDefaultProducts(conn, data):
         categoryId = lipstick.get('category_id')
         colorCodeHex = lipstick.get('color_code_hex')
         categoryColor = lipstick.get('category_color_type_id')
-        query = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} OR color_code_hex='{2}'".format(categoryId,categoryColor, colorCodeHex)
+        query = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} AND color_code_hex='{2}'".format(categoryId,categoryColor, colorCodeHex)
         cursor.execute(query)
         response['lipstick'] = cursor.fetchone()
 
@@ -70,7 +70,7 @@ def getDefaultProducts(conn, data):
         categoryId = blush.get('category_id')
         colorCodeHex = blush.get('color_code_hex')
         categoryColor = blush.get('category_color_type_id')
-        query = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} or color_code_hex='{2}' ".format(categoryId,categoryColor, colorCodeHex)
+        query = "SELECT id, name, color_code_hex FROM products WHERE category_id={0} AND category_color_type_id={1} AND color_code_hex='{2}' ".format(categoryId,categoryColor, colorCodeHex)
         cursor.execute(query)
         response['blush'] = cursor.fetchone()
 
