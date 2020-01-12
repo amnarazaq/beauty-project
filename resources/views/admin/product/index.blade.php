@@ -36,10 +36,10 @@
                     <a href="{{ route('products.edit', [$product->id]) }}" class="mr-2" title="edit">
                         <i class="far fa-edit text-primary" aria-hidden="true"></i>
                     </a>
-                    <a href="javascript:{}" onclick="document.getElementById('my_form').submit();">
+                    <a href="javascript:{}" onclick="document.getElementById('my_form{{ $product->id }}').submit();">
                         <i class="fa fa-trash text-danger" aria-hidden="true"></i>
                     </a>
-                       <form method="POST" action="{{ route('products.delete', [$product->id])}}" id="my_form">
+                       <form method="POST" action="{{ route('products.delete', [$product->id])}}" id="my_form{{$product->id}}">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
                         </form>
