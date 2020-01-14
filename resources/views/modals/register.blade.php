@@ -79,3 +79,8 @@
     </div>
   </div>
 </div>
+@if ($errors->any() && ($errors->has('name') || $errors->has('email') || $errors->has('password')))
+    <script type="text/javascript">
+            $('#register-modal').modal('toggle');
+    </script>
+@endif

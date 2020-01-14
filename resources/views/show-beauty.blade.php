@@ -12,7 +12,7 @@
                 font-size: 24px">Here Yours
             </div>
             <div class="banner-image-large">
-                <img alt="Get the look"src="{{ asset('/images/look.PNG') }}">
+                <img alt="Get the look"src="{{ asset('/images/look.png') }}">
             </div>
         </div>
     </div>
@@ -118,7 +118,7 @@
                 <p class="pl-4 pr-5">as our AI team select and done on your eyes according to your dress color and event for which you want to do makeup.</p>
             </div>
             <div class="col-sm-5">
-                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/7.jpg') }}">
+                <img class="product img-fluid pl-4 pr-5" style="background-color: white" width="150px" height="150px" src="{{ asset('/images/toturial-image/7.png') }}">
             </div>
         </div>
         <div class="row d-flex justify-content-left mt-3">

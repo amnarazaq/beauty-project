@@ -1,3 +1,7 @@
 *
+!/scripts/
+!scripts/*
+!/testImages/
+!testImages/**
 !public/
 !.gitignore

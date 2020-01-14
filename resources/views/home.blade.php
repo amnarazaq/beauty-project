@@ -9,7 +9,7 @@
 		<div class="container">
 			<form  enctype="multipart/form-data" method="POST" id="beautyForm" action="{{ route('show-beauty') }}">
 			@csrf
-				<div class="row d-flex justify-content-center" style="margin-top:75px">
+				<div class="row d-flex justify-content-center" style="margin-top:85px">
 					<div class="banner-image ">
 						<img class="" alt="Get the look"src="{{ asset('/images/model.png') }}">
 					</div>
@@ -23,8 +23,8 @@
 						<img alt="Get the look"src="{{ asset('/images/look.png') }}">
 					</div>
 				</div>
-				<div class="row d-flex mt-3 ml-2 mr-2">
-					<div class="col-md-4">
+				<div class="row d-flex justify-content-md-between justify-content-sm-center flex-md-wrap mt-3 ml-2 mr-2">
+					<div style="width: 300px;">
 						<div class=" row">
 							<div class="col-md-8">
 								<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
@@ -36,7 +36,7 @@
 							</div>
 						</div>	
 					</div>
-					<div class="col-md-4" >
+					<div style="width: 270px;">
 						<div class="row">
 							<div class="col-md-12" id="my_result">
 								<img class="w-100" src="{{ asset('/images/camera.jpg') }}">
@@ -52,7 +52,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4" >
+					<div style="width: 300px;">
 						<div class="row">
 							<div class="col-sm-12">
 								<img class="w-100" src="{{asset('/images/image.png')}}">
@@ -60,42 +60,42 @@
 						</div>	
 					</div>	
 				</div>
-				<div class="row d-flex mt-4 ml-4 pl-2">
-					<div class="row d-flex">
-						<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
-							font-size: 28px; padding-top:5px">Select</div>
-						<div class="banner-image-large">
-							<img alt="look2"src="{{ asset('/images/look2.png') }}">
+				<div class="row mt-4">
+					<div class="col-sm-12 col-md-6">
+						<div class="row">
+							<div class="col-sm-12 d-flex">
+								<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
+									font-size: 28px; padding-top:5px">Select</div>
+								<div class="banner-image-large">
+									<img alt="look2"src="{{ asset('/images/look2.png') }}">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row d-flex mt-3 ml-4 pl-1">	
-					<div class=" row">
-						<div class="col-md-4">
+				<div class="row">	
+					<div class="col-sm-12 col-md-5 ml-2 mt-2">
+						<div class="d-flex justify-content-between">
 							<div class="radio">
 								<label class="lb-check">
 									<input type="radio" name="lookChoice" class="choice" value="bridal">
-									<span class="cr d-flex justify-content-center">
+									<span class="cr text-center">
 										<span>Bridal</span>
 									</span>
 								</label>
 							</div>
-						</div>
-						<div class="col-md-4">
 							<div class="radio">
 								<label class="lb-check">
-									<input type="radio" name="lookChoice" class="choice" value="casual">
-									<span class="cr d-flex justify-content-center">
+									<input type="radio" name="lookChoice" class="choice" value="casual" checked>
+									<span class="cr text-center">
 										<span>Casual</span>
 									</span>
 								</label>
 							</div>
-						</div>
-						<div class="col-md-4">
 							<div class="radio">
 								<label class="lb-check">
 									<input type="radio" name="lookChoice" class="choice" value="party">
-									<span class="cr d-flex justify-content-center">
+									<span class="cr text-center">
 										<span>Party</span>
 									</span>
 								</label>
@@ -103,21 +103,25 @@
 						</div>
 					</div>
 				</div>
-				<div class="row d-flex mt-4 ml-4 pl-2">
-					<div class="row d-flex">
-						<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
-							font-size: 28px; padding-top:4px">Select Dress</div>
-						<div class="banner-image-large">
-							<img alt="color" src="{{ asset('/images/color.png') }}">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 mt-2">
+						<div class="row">
+							<div class="col-sm-12 d-flex">
+								<div class="font-weight-bold pl-2 pr-2" style=" font-family: HelveticaNeueW01-77BdCn_692722,arial,sans-serif;
+									font-size: 28px; padding-top:4px">Select Dress</div>
+								<div class="banner-image-large">
+									<img alt="color" src="{{ asset('/images/color.png') }}">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row d-flex mt-4 ml-4 pl-3">
-					<div class="row d-flex pb-5" style="width:200px;">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 pb-3 ml-2 mt-2">
 						<input type="color" name="dressColor" value="#FF1493" style="width:100%;">
 					</div>
 				</div>
-				<div class="row d-flex justify-content-center">
+				<div class="d-flex justify-content-center mt-2">
 					<button class="btn btn-cam" type="submit" ><i class="fas fa-grin-hearts"></i> <b>Show Beauty</b></button>
 				</div>
 			</form>
@@ -151,7 +155,7 @@
 	
 	function cameraOn() {
 		Webcam.set({
-			width: 270,
+			width: 269,
 			height: 300,
 			dest_width: 640,
 			dest_height: 480,

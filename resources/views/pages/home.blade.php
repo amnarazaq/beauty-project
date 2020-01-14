@@ -185,7 +185,7 @@
 		<div class="row d-flex justify-content-center mt-5">
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/facial.jpg" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="{{asset('/images/facial.jpg')}}" alt="">
 				</div>
 				<div class="text-center mt-2">
 					<p><b>FACIAL TECHNOLOGY</b></p>
@@ -196,7 +196,7 @@
 			</div>
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/makeup.jpg" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="{{asset('/images/makeup.jpg')}}" alt="">
 				</div>
 				<div class="text-center mt-2">
 					<p><b>MAKEUP VERSATILITY</b></p>
@@ -207,7 +207,7 @@
 			</div>
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/full-makeup.jpg" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="{{asset('/images/full-makeup.jpg')}}" alt="">
 				</div>
 				<div class="text-center mt-2">
 					<p><b>FULL MAKEOVERS</b></p>
@@ -218,7 +218,7 @@
 			</div>
 			<div class="col-sm-3 justify-content-center">
 				<div>
-					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="https://beauty-project.site/images/compare.jpg" alt="">
+					<img class="rounded-circle mx-auto d-block" width="130px" height="130px" src="{{asset('/images/compare.jpg')}}" alt="">
 				</div>
 				<div class="text-center mt-2">
 					<p style="margin-bottom: 0PX"><b>COMPARE BEFORE AND</b></p>

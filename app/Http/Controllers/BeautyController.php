@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Faker\Provider\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 class BeautyController extends Controller
@@ -66,6 +67,7 @@ class BeautyController extends Controller
         ob_start();
         $output = [];
         exec($cmd . " 2>&1", $output);
+        Log::info(print_r($output, true));
         $result = ob_get_contents();
         ob_end_clean();
 
